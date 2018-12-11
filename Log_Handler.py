@@ -403,5 +403,5 @@ def merge_attackers(to_attacker, from_attacker):
 
 if __name__ == "__main__":
     attackerstats = parse_json_logs(sys.argv[1])
-    attackerstats = reorganizeByCountry(attackerstats) # Uncomment to group attackers by region/fingerprint
+    attackerstats = reorganizeByCountry(attackerstats) # Comment to group attackers by ip instead of region/fingerprint
     log_statistics(attackerstats)
